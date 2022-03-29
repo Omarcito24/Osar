@@ -1,0 +1,54 @@
+.section-container
+    margin: auto
+    margin-top: 4em
+    background-color: hsl(0, 0%, 90%)
+    width: 100%
+    height: 400px
+    font-family: $poppi
+    cursor: pointer
+
+.section-span
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    align-items: center
+
+.section-img
+    width: 60px
+    height: 70px
+    transition: .5s
+    margin-top: 4em
+
+.section-tittle
+    font-size: 2em
+    text-align: center
+    font-weight:  bold
+    margin-top: .5em
+
+.section-p
+    text-align: center
+    margin-top: 2em
+
+.section-btn
+    margin-top: 2em
+    transition: .5s
+    &:hover
+      border-radius: .5em
+
+.section-container:hover .section-img
+    transform: scale(1.3)
+
+@media screen and ( max-width: 430px  )
+    .section-tittle
+        width: 100%
+        font-size: 1.5em
+
+    .section-p
+        font-size: .9em
+        
+@media screen and ( max-width: 430px  )
+    .section-container
+        height: 420px
+    
+
+    

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" class=" animate__animated animate__zoomInUp">
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Computadora, Desarrollo web, Celulares, Soporte tecnico, Tecnologia"/>
+    <meta name="copyright" content="OSAR" /> 
+    <meta name="author" content="Omar Garcia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Styles-->
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    
+    <!--Fonts-->                          
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+                                
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Montserrat:wght@300;400&family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="IMG/osar-red.ico"/>
+    <title>Inicio | OSAR</title>
+    </head>
+    <body >
+        <header>
+            <nav class="nav-container" id="nav-container">
+               <div class="logo-container">
+                   <a href="index.html">
+                        <img src="IMG/osar-red.png" alt="Logo OSMAR" class="nav-logo">
+                    </a>
+               </div>
+               <input type="checkbox"  id="check">
+               <label for="check" class="check-btn">
+                   <img src="IMG/menu-r.png" alt="menu responsive" class="r-btn">
+               </label>
+               <div class="search-container">
+                   <input type="text" class="search-input" placeholder="Busca cursos o tutoriales">
+                   <a href="#" class="search-link" >
+                        <i onclick="search()" class="fa-solid fa-magnifying-glass search-icon"></i>
+                   </a>
+               </div>
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link nav-link1">Aprende</a></li>
+                    <li class="nav-item item-form" onclick="menu_o()">Enseña</li>
+                    <li class="nav-item"><a href="creadores.html" class="nav-link nav-link3">Creadores</a></li>
+                </ul>
+                <span class="login" id="login">
+                        <a class="login-link login-link1"  onclick="login_op()">Inicia sesión</a>
+                        <a class="login-link login-link2" onclick="registrar_o()">Registrate</a>
+                </span>
+                <form class="form" id="form-container">
+                    <div class="form-container">
+                        <span class="close close-btn close-form_btn" onclick="menu_c()">X</span>
+                        <div class="form-grid">
+                                <div class="form-span">
+                                    <h1 class="form-tittle">Contact <span class="enfasis">Us</span></h1>
+                                    <div class="form-contact">
+                                        <div class="box1">
+                                            <label class="form-label">Nombre Completo</label>
+                                            <input class="form-input" required type="text" placeholder="Omar Garcia">
+                                        </div>
+
+                                        <div class="box2">
+                                            <label class="form-label">Email</label>
+                                            <input class="form-input" required type="email" placeholder="Omar3144@gmail.com">
+                                        </div>
+
+                                        <div class="box3">
+                                            <label class="form-label">Experiencia</label>
+                                            <select required>
+                                                <option>Poca</option>
+                                                <option>Mucha</option>
+                                                <option>Colegial</option>
+                                                <option>Profesional</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="box4">
+                                            <label class="form-label">Telefono</label>
+                                            <input class="form-input" required type="tel" placeholder="849-650-4573">
+                                        </div>
+                                    
+                                        <div class="box5">
+                                            <label class="form-label">Mensaje</label>
+                                            <textarea class="form-textarea" required placeholder="Escriba un mensaje"></textarea>
+                                        </div>
+                                    
+                                        <input type="submit" id="form-sumbit"  value="Enviar" class="form-submit">
+                                    </div>
+                                </div>
+                                <div class="form-aside">
+                                    <h1 class="aside-tittle">Mas Info</h1>
+                                    <ul class="aside-list">
+                                        <li class="aside-item"><i class="fa-solid fa-location-dot"></i> Ensanchez La Paz</li>
+                                        <li class="aside-item"><i class="fa-solid fa-phone"></i> (849)650-7319</li>
+                                        <li class="aside-item"><i class="fa-solid fa-envelope-open-text"></i> ogarcia2405@gmail.com</li>
+                                    </ul>
+                                    <p class="aside-p">
+                                        Somos una plataforma de hacer cursos relacionados con la informatica, programacion, etc... Tenemos un sin 
+                                        numero de cursos que te interesaran.
+                                    </p>
+                                    <span class="aside-span">Osar.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="login-form" id="login-form">
+                    <div class="login-container">
+                        <span class="login-close" id="login-close" onclick="login_c()" style="cursor:pointer">X</span>
+                        <div class="login-img_container">
+                            <img src="IMG/rayo.png" class="login-img" alt="logo osar">
+                        </div>
+                        <div class="login-form_span">
+                            <h1 class="login-form_tittle">Login</h1>
+                            <div class="username">
+                                <label class="login-label">Usuario</label>
+                                <input type="text" class="login-input" placeholder="Ogarcia304">
+                            </div>
+                            <div class="password">
+                                <label class="login-label">Contraseña</label>
+                                <input type="password" class="login-input" placeholder="******">
+                            </div>
+                            <div class="login-btn_container">
+                                <span class="login-btn" onclick="location.href = 'login.html'">Iniciar Sesión</span>   
+                                <span class="registrar-link registrar-link2" onclick="location.href = 'lost.html'" id="registrar-link2">
+                                    Perdiste tu contraseña? 
+                                </span>
+                                <span class="registrar-link" onclick="login_registrar()"  id="registrar-link">
+                                    No tienes una cuenta? Registrate
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="registrate-form" id="registrate-form">
+                    <div class="login-container">
+                        <span class="login-close" onclick="registrar_c()" style="cursor:pointer">X</span>
+                        <div class="login-img_container">
+                            <img src="IMG/rayo.png" class="login-img" alt="logo osar">
+                        </div>
+                        <div class="login-form_span">
+                            <h1 class="login-form_tittle">Registrate</h1>
+                            <div class="username">
+                                <label class="login-label">Nombre</label>
+                                <input type="text" class="login-input" placeholder="Omar Garcia">
+                            </div>
+                            <div class="username">
+                                <label class="login-label">Email</label>
+                                <input type="text" class="login-input" placeholder="ogarcia05@gmail.com">
+                            </div>
+                            <div class="password">
+                                <label class="login-label">Contraseña</label>
+                                <input type="password" class="login-input" placeholder="******">
+                            </div>
+                            <div class="login-btn_container">
+                                <span class="login-btn" onclick="location.href = 'registrate.html'">Registrate</span>   
+                                <span class="registrar-link" id="registrar-link" onclick="registrar_login()">
+                                    Ya tienes cuenta? Inicia Sesión
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            <div class="bg-img" id="bg-img" >
+            </div>
+        </header>
+        <main>
+            <div class="Carousel" id="carousel">
+                <h2 class="carousel-tittle tittle">Cursos que te <span class="enfasis">pueden interesar<span></h2>
+                <div class="carousel-list" id="carousel-list">
+                    <button class="carousel-arrow carousel-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+                    </button>
+                        <div class="carousel-track" id="track">
+                                <a href="#nav-container">
+                                    <div class="card" id="card"  onclick="login_o()">
+                                            <img src="IMG/Slider/css.jpg" class="img-card" alt="curso de css">
+                                        <h1 class="tittle-card">Qué se puede hacer con CSS?</h1>
+                                    </div>
+                                </a>
+                                <a href="#nav-container">
+                                    <div class="card" id="card" onclick="login_o()">
+
+                                            <img src="IMG/Slider/php.jfif" class="img-card" alt="curso de php">
+                                        <h1 class="tittle-card">Qué se puede hacer con PHP?</h1>
+                                    </div>
+                                </a>
+                                <a href="#nav-container">
+                                    <div class="card" id="card" onclick="login_o()">
+
+                                            <img src="IMG/Slider/js.png" class="img-card" alt="curso de js">
+                                        <h1 class="tittle-card">Qué se puede hacer con JS?</h1>
+                                    </div>
+                                </a>
+                                <a href="#nav-container">
+                                    <div class="card" id="card" onclick="login_o()">
+
+                                            <img src="IMG/Slider/c++.png" class="img-card" alt="curso de c++">
+                                        <h1 class="tittle-card">Qué se puede hacer con C++?</h1>
+                                    </div>
+                                </a>
+                                <a href="#nav-container">
+                                    <div class="card" id="card" onclick="login_o()">
+
+                                            <img src="IMG/Slider/phyton.jpg" class="img-card" alt="curso de phyton">
+                                        <h1 class="tittle-card">Qué se puede hacer con PHYTON?</h1>
+                                    </div>
+                                </a>
+                                <a href="#nav-container">
+                                    <div class="card" id="card" onclick="login_o()">
+
+                                            <img src="IMG/Slider/go.png" class="img-card" alt="curso de go">
+                                        <h1 class="tittle-card">Qué se puede hacer con GO?</h1>
+                                    </div>
+                                </a>
+                                <a href="#nav-container">
+                                    <div class="card" id="card" onclick="login_o()">
+                                            <img src="IMG/Slider/mysql.webp" class="img-card" alt="curso de sql">
+                                        <h1 class="tittle-card">Qué se puede hacer con MY SQL?</h1>
+                                    </div>
+                                </a>
+                                <a href="#nav-container">
+                                    <div class="card" id="card" onclick="login_o()">
+                                            <img src="IMG/Slider/Javalogo.png" class="img-card" alt="curso de java">
+                                        <h1 class="tittle-card">Qué se puede hacer con JAVA?</h1>
+                                    </div>
+                                </a>
+                                <a href="#nav-container">
+                                    <div class="card" id="card" onclick="login_o()">
+                                            <img src="IMG/Slider/angular.png" class="img-card" alt="curso de angular">
+                                        <h1 class="tittle-card">Qué se puede hacer con ANGULAR?</h1>
+                                    </div>
+                                </a>
+                                <a href="#nav-container">
+                                    <div class="card" id="card" onclick="login_o()">
+                                            <img src="IMG/Slider/csharp-1.jpg" class="img-card" alt="curso de c#">
+                                        <h1 class="tittle-card">Qué se puede hacer con C#?</h1>
+                                    </div>
+                                </a>
+                                <a href="#nav-container">
+                                    <div class="card" id="card" onclick="login_o()">
+                                            <img src="IMG/Slider/sass.png" class="img-card" alt="curso de sass">
+                                        <h1 class="tittle-card">Qué se puede hacer con SASS?</h1>
+                                    </div>
+                                </a>
+                        </div>
+                    <button class="carousel-arrow carousel-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+        <article>
+            <h1 class="tittle article-tittle">¿Qué puedes<span class="enfasis"> aprender en OSAR?</span></h1>
+            <div class="article-container">
+                <div class="span-container">
+                     <h2 class="article-sub_tittle">Desarrollo de software,<br>cloud e inteligencia artificial </h2>
+                <p class="article-p">
+                    ¡Domina las áreas con más demanda de trabajo! Estudia desde cero hasta experto programación, bases de datos,
+                     machine learning, seguridad informática, desarrollo móvil o videojuegos.
+                </p>
+                </div>
+                <div class="article-img_container">
+                    <img src="IMG/Article/flat-computer.svg" alt="programacion" class="article-img">
+                </div>
+            </div>
+            <div class="sub-article_container">
+                <a href="#nav-container">
+                    <div onclick="login_o()" class="sub-article sub-article_1">
+                        <img src="IMG/Article/disenador-grafico.png" alt="Diseño grafico" class="sub-article_img sub-article_img1">
+                        <h1 class="sub-article_tittle">Diseño y estilo grafico</h1>
+                        <p class="sub-article_p">
+                            Transforma tus ideas en proyectos que la gente ame. Encuentra cursos de animacion, diseño grafico y dibujo.
+                        </p>
+                    </div>
+                </a>
+                <a href="#nav-container">
+                    <div onclick="login_o()" class="sub-article sub-article_2">
+                        <img src="IMG/Article/cohete.png" alt="Emprendimiento" class="sub-article_img sub-article_img2">
+                        <h1 class="sub-article_tittle">Negocios y emprendimiento</h1>
+                        <p class="sub-article_p">
+                            Haz realidad el sueño de crear tu propio negocio. Especializate en finanzas, estrategias de marketing, ventas y publicidad.
+                        </p>
+                    </div>
+                </a> 
+                <a href="#nav-container">
+                    <div onclick="login_o()" class="sub-article sub-article_3">
+                        <img src="IMG/Article/experto.png" alt="Profesionalismo" class="sub-article_img sub-article_img3">
+                        <h1 class="sub-article_tittle">Desarrollo personal y profesional</h1>
+                        <p class="sub-article_p">
+                            Expota tu potencial y se la mejor version de ti mismo. Aprende sobre liderazgo, productividad, hablar en publico y mucho mas.
+                        </p>
+                    </div>
+                </a>
+                <a href="#nav-container">
+                    <div onclick="login_o()" class="sub-article sub-article_4">
+                        <img src="IMG/Article/idiomas.png" alt="Idiomas" class="sub-article_img sub-article_img4">
+                        <h1 class="sub-article_tittle">Lenguas extrangeras en codigo</h1>
+                        <p class="sub-article_p">
+                            Impulsa tus habilidades en lenguas extrangeras para poder ser mas productivo a la hora de escribir codigo.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </article>
+        <section>
+            <div class="section-container">
+                <div class="section-span">
+                    <img src="IMG/rayo.png" alt="OSAR-logo" class="section-img" >
+                    <span class="section-tittle tittle">Comparte de tu<br><span class="enfasis">sabiduria tecnologica</span></span>
+                    <p class="section-p">
+                        Se parte de nuestro proyecto, enseñando a jovenes futurista sedientos del saber<br>a ser la nueva generacion de la programacion.
+                    </p>
+                    <a href="#" class="btn section-btn" onclick="login_o()">Entra ya</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="span-1">
+                    <img src="IMG/osar-blanco.png" alt="logo osar">
+                    <div class="iconos">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="span-2">
+                    <h2>Page</h2>
+                    <ul>
+                        <li>Aprende</li>
+                        <li>Enseña</li>
+                        <li>Creadores</li>
+                    </ul>
+                </div>
+                <div class="span-3">
+                    <h2>Legal</h2>
+                    <ul>
+                        <li>Privacy</li>
+                        <li>Refund Policy</li>
+                        <li>Cookie Policy</li>
+                    </ul>
+                </div>
+                <div class="span-4">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>Rep Dom</li>
+                        <li>United Stated</li>
+                        <li>Japan</li>
+                        <li>Mexico</li>
+                        <li>Germany</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copy">
+                <i class="fa-solid fa-copyright"></i> OSAR Todos los derechos reservados
+            </div>
+        </footer>
+        <script src="main.js"></script>         
+    </body>
+</html>

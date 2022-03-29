@@ -1,0 +1,555 @@
+@url _carousel.sass
+    
+.nav-container 
+  width: 100%
+  display: flex
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.267)
+  justify-content: space-between
+  padding-top: 1.5em
+  background-color: #fff
+  padding-left: 9em
+
+
+.nav-logo 
+  width: 120px
+  margin-left: 1.7em
+
+
+.search-container
+    padding-top: .5em 
+
+
+.search-input 
+    width: 400px
+    border: 1px solid #fff
+    font-size: .87em  
+    opacity: .8
+
+
+.search-input:focus
+    outline: none
+
+
+.nav-list
+    display: flex
+    padding-top: .9em 
+    font-size: .8em
+    font-weight: 600
+
+
+.nav-item
+     padding-right: 1.3em
+
+
+.nav-link
+    color: $gray
+    text-decoration: none
+    transition: .3s 
+
+.nav-link3:hover
+    font-weight: bold
+    color: $yellow
+    
+
+.nav-link2:hover
+    font-weight: bold
+    color: $yellow
+
+
+.search-btn
+    font-family: 'Font Awesome Kit'
+    font-weight: 700
+    
+
+
+.nav-link1
+    background: $yellow
+    font-weight: 700
+    padding: .6em
+    color: #fff
+   
+        
+
+
+.login
+    padding-top: .6em 
+
+
+.login-link
+    color: $yellow
+    padding: .5em
+    text-decoration: none
+    margin-right: 1.6em
+    font-size: .8em 
+    font-weight: 700
+    border: 1px solid $yellow
+    cursor: pointer
+    &:active
+        opacity: .5
+
+.login-link2
+    background: $yellow
+    font-weight: 700
+    color: #fff
+    transition: .5s
+    &:hover
+        border-radius: .5em 
+
+
+.login-link1
+    margin-right: .2em
+    
+
+
+.login-link:hover
+    background: $yellow
+    font-weight: 700
+    color: #fff
+
+    transition: .3s
+
+.search-icon
+    text-decoration: none
+    font-size: 1em
+    &:active
+    color: rgb(85, 85, 85)
+    &:hover
+        opacity: .8
+        
+
+.r-btn
+    width: 40px
+
+#check,
+.check-btn
+    display: none
+
+#check-2
+    display: none
+
+@media screen and ( max-width: 1350px )
+    .nav-container
+        padding-left: 0
+
+    .nav-list,
+    .login
+        position: fixed
+        top: 0
+        width: 30%
+        background: #fff
+        height: 100vh
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        z-index: 100
+        left: -100%
+
+    .nav-list a,
+    .login a
+        padding: 0
+
+    .nav-link1
+        background: #fff
+        color: $gray
+        &:hover
+            color: $yellow  
+
+    .login
+        margin-top: 15.5em
+        display: flex
+        width: 30%
+        padding: 2.5em
+        align-items: flex-start
+        transition: all .7s
+        flex-direction: column
+        
+        
+    .login a
+        padding: 1.2em
+        margin-top: 1em
+        width: 100%
+        text-align: center
+        
+    .nav-list
+        padding-top: 3em
+        padding-left: 1em
+        transition: .7s
+
+    .nav-item
+        padding: 1.2em
+        border-bottom: 1px solid #fff
+        width: 100%
+        font-size: 1.5em    
+
+    .check-btn
+        display: block
+        position: absolute
+        cursor: pointer
+        top: 24px
+        right: 1.2em
+
+    .search-container
+        margin-left: 13em
+
+    .nav-container
+      justify-content: flex-start
+      display: flex
+
+    #check:checked ~ .nav-list
+        left: 0em
+
+    #check:checked ~ .login
+        left: 0em
+
+   
+
+    @media screen and ( max-width: 940px )
+        .search-container
+            margin-left: 10em
+
+    
+    @media screen and ( max-width: 850px )
+        .search-container
+            margin-left: 5em
+
+    
+    @media screen and ( max-width: 750px )
+        .search-container
+            margin-left: 2.3em
+
+    
+    @media screen and ( max-width: 710px )
+        .search-container
+            display: none
+
+        .login,
+        .nav-list
+            width: 70%
+        
+    @media screen and ( max-width: 500px )
+        .login,
+        .nav-list
+            width: 100%
+
+        #check:checked ~ .check-btn
+            position: fixed
+
+        .check-btn
+            z-index: 101
+
+
+.item-form
+    cursor: pointer
+    &:hover
+        font-weight: bold
+        color: $yellow
+
+    
+.form-container
+    position: absolute
+    top: 7em
+    left: 5%
+    width: 90%
+    margin: auto
+    
+
+.form
+    display: none
+
+.form-grid
+    display: grid
+    grid-template-columns: 75% 25%
+
+
+.close-form_btn
+    font-size: 2.7em
+    width: 30px
+    cursor: pointer
+
+
+.form-tittle
+    display: flex
+    margin-left: 1em
+    font-weight: 800
+    color: #fff
+    font-size: 2.4em
+    margin-bottom: 1.3em
+
+.form-span
+    background: #303030
+
+.form-contact
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    div
+        width: 100%
+        display: flex
+        flex-direction: column
+
+.box5, .form-submit
+    display: grid
+    grid-column: 1 / 3
+
+.form-label
+    color: #fff
+    font-size: 1.3em
+    margin-left: 1.5em
+    letter-spacing: 0
+
+.form-input, 
+.form-textarea
+    border: none
+    background: none
+    border-bottom: 1px solid $yellow
+    margin-left: 1.8em
+    margin-bottom: 2em
+    margin-right: 2.4em
+    margin-top: 1em
+    color: #fff
+    padding: .5em
+    &:focus-visible
+        outline: none
+
+.box3 select
+    margin-left: 1.8em
+    margin-bottom: 1.8em
+    margin-right: 2.2em
+    margin-top: 1.38em
+    padding: 0.3em
+    background: none
+    outline: none
+    border: none
+    border-bottom: 1px solid $yellow
+    color: #a5a5a5
+
+.form-textarea
+    resize: none
+
+.form-submit
+    margin-left: 1.8em
+    margin-bottom: 1.99em
+    margin-right: 2.4em
+    margin-top: 1em
+    padding: 0.7em
+    background: none
+    outline: none
+    border: none
+    cursor: pointer
+    transition: .4s
+    color: #fff
+    background: $yellow
+    &:hover
+        border: 1px solid $yellow
+        background: none
+        color: #fff
+        &:active
+            opacity: .5
+
+.form-aside
+    background: #0e0e0e
+    color: #ebebeb
+    padding: 0.5em
+    padding-left: 3em
+    font-weight: 100
+
+.aside-tittle
+    font-size: 1.6em
+    margin-top: 1em
+
+.aside-list
+    margin-top: 2.4em
+    margin-bottom: 2em
+
+.aside-item
+    padding-left: .4em
+    padding-bottom: .4em
+
+.aside-p
+    line-height: 1.4em
+    width: 100%
+    margin-bottom: 2em
+
+@media screen and ( max-width: 1990px )
+    .caarousel
+        margin: 41em 60px 60px 60px
+
+@media screen and ( max-width: 1370px  )
+    .form-grid
+        display: grid
+        grid-template-columns: 100%
+
+    .caarousel
+        margin: 66em 60px 60px 60px
+
+@media screen and ( max-width: 660px  )
+    .form-contact
+        display: flex
+        flex-direction: column
+        div
+            padding-bottom: 1em
+            
+    .caarousel
+        margin: 88em 60px 60px 60px
+
+    .form-submit
+        margin-top: 0em
+
+
+.login-container
+        background: #0e0e0e
+        color: #fff
+        padding: 2em
+        position: fixed
+        width: 402px
+        z-index: 200
+        left: 41em
+        top: 10em
+
+.login-form
+        height: 361vh
+        margin: 0
+        display: none
+        position: absolute
+        width: 100%
+        top: 0
+        left: 0
+        z-index: 300
+        background: rgba(36, 36, 36, 0.5)
+
+
+.login-img_container
+        position: absolute
+        display: flex
+        text-align: center
+        width: 121px
+        height: 122px
+        border-radius: 23em
+        top: -3.6em
+        background: #f3f3f3
+        left: 8.5em
+        justify-content: center
+        align-items: center
+
+.login-img
+    width: 65px
+    height: 90px
+        
+.login-form_span
+        text-align: center
+
+.login-form_tittle
+    margin-top: 1.2em
+
+.username,
+.password
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+.login-label
+    font-size: 1.1em
+
+.login-input
+    border: none
+    background: none
+    border-bottom: 1px solid #fff
+    width: 100%
+    margin-bottom: 2em
+    margin-top: 1em
+    color: #fff
+    padding-bottom: .2em
+    &:focus-visible
+        outline: none
+        &::placeholder
+            color: #464646
+
+.login-btn_container
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+.login-btn
+    background: $yellow
+    width: 100%
+    padding: 0.8em
+    border-radius: 2em
+    font-size: 1.1em
+    font-weight: bold
+    cursor: pointer
+    &:hover
+        opacity: .9
+        &:active
+            opacity: .7
+
+.registrar-link
+    letter-spacing: 1px
+    font-size: 1.02em
+    margin-top: 0.6em
+    color: #939393
+    cursor: pointer
+    &:hover
+        color: #fff
+
+.registrar-link2
+        margin-top: 1.9em
+
+.registrate-form
+        height: 320vh
+        margin: 0
+        display: none
+        position: absolute
+        width: 100%
+        top: 0
+        left: 0
+        background: rgba(36, 36, 36, 0.5)
+
+.registrar-link
+    margin-top: 1.6em
+
+@media screen and ( max-width: 1390px )
+    .login-container
+            left: 31em
+
+@media screen and ( max-width: 1220px )
+    .login-container
+            left: 21em
+
+@media screen and ( max-width: 1030px )
+    .login-container
+            left: 16em
+
+@media screen and ( max-width: 760px )
+    .login-container
+            left: 10em
+
+@media screen and ( max-width: 690px )
+    .login-container
+            left: 5em
+
+@media screen and ( max-width: 550px )
+    .login-container
+            left: 2em
+
+@media screen and ( max-width: 480px )
+    .login-container
+            width: 352px
+            padding: 1em
+
+    .login-img_container
+        left: 7.2em
+        top: -4.6em
+    
+
+@media screen and ( max-width: 400px )
+    .login-container
+            width: 325px
+            padding: 0.4em
+            left: 1em
+
+    .login-img_container
+            left: 6.3em
+
+
+
+
+

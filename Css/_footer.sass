@@ -1,0 +1,94 @@
+footer
+    background: #111111
+    color: #fff
+    padding: 1em
+    
+.footer-container
+    display: grid
+    grid-template-columns: 40% 20% 20% 20%
+    padding-top: 2.5em
+
+.footer-copy
+    text-align: center
+    font-size: 1.1em  
+    padding-bottom: .7em
+    padding-top: em
+    
+footer img
+    width: 121px
+
+.span-1
+    margin-left: 9em
+
+.iconos
+    margin-top: .4em
+    font-size: 1.3em
+    a
+        color: #666666
+        opacity: .6
+        padding-right: .7em
+        &:hover
+            color: #fff
+
+.span-2,
+.span-3,
+.span-4
+    line-height: 2.5em
+    li
+        font-size: 1.1em
+        opacity: .9
+        font-family: $poppi
+        color: #fff
+        font-weight: lighter
+        cursor: pointer
+        &:hover
+            color: red
+       
+footer ul 
+    padding-top: .4em
+
+@media screen and ( max-width: 1012px )
+    .span-1
+        margin-left: 4em
+
+@media screen and ( max-width: 870px )
+    .span-1
+        margin-left: 2em
+    
+@media screen and ( max-width: 800px )
+    .span-1
+        grid-column: 1 / 5
+        margin-bottom: 3em
+        margin-left: 0
+
+    .footer-container 
+        grid-template-columns: 1fr 1fr 1fr
+        justify-items: center
+
+    .footer-copy
+        margin-top: 1.2em
+
+@media screen and ( max-width: 500px )
+    .footer-container
+        grid-template-columns: 1fr 1fr
+        justify-items: center
+
+    .span-1
+        grid-column: 1 / 3
+
+    .span-4
+        grid-column: 1 / 3
+        margin-top: 2em
+
+@media screen and ( max-width: 350px )
+    .footer-container
+        grid-template-columns: 1fr
+
+    .span-2,
+    .span-3,
+    .span-4
+        grid-column: 1 / 5  
+        padding-bottom: 2em
+        grid-gap: 0
+
+        
